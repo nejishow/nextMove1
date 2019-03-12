@@ -1,0 +1,75 @@
+.parallax1, .parallax2, .parallax3{
+    height: 70vh;
+    width: inherit;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.parallax1{
+    background-image: url("../../../assets/image/dashboardBg.jpg");
+}
+.parallax2{
+    background-image: url("../../../assets/image/parallax2.jpg");
+}
+.parallax3{
+    background-image: url("../../../assets/image/parallax3.jpg");
+}
+.parallaxDIV{
+    height: 33vh;
+    width: 90%;
+    opacity: 0.8;
+
+
+}
+#P1 {
+    margin-left: 5vh;
+    width: 40%;
+    background-color: rgb(241, 230, 177);
+}
+#P3 {
+    margin-left: 5vh;
+    width: 40%;
+    background-color: rgba(177, 245, 183, 0.342);
+
+} 
+#P2{
+    position: absolute;
+    right: 0;
+    margin-right: 10vh;
+    width: 40%;
+    background-color: rgba(177, 245, 245, 0.692);
+
+}
+
+.intro{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+.imageLogo{
+    height: inherit;
+    width: inherit;
+}
+.textIntro{
+    text-align: center;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;
+
+  
+}
+.logoIntro, .textIntro{
+    height: inherit;
+    width: 100%;
+}
+.divider{
+    border-bottom:solid ;
+    margin: 10%
+}

@@ -1,0 +1,39 @@
+.toolbar {
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  .sidenavContainer {
+    width: 100%;
+    background-color: transparent;
+  }
+  .sidenavContent{
+    min-height: 67vh;
+
+  }
+  .example-icon {
+    padding: auto;
+    margin: auto;
+  }
+  .logo{
+    height: inherit;
+    width: auto;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .spacer {
+    flex-grow: 0.05;
+    margin: 1%;
+  }
+  .btntool {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+  }
+
+  
+  

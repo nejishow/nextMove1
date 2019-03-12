@@ -1,0 +1,29 @@
+<mat-toolbar color="success" class="toolbar" role="heading">
+  <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="sidenav.toggle()" color="primary">
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button> <img src="../../../assets/image/logo/twitter.png" class="logo" alt="">
+  <span class="example-spacer"></span>
+
+  <button mat-raised-button color="accent" class="spacer">Contact</button>
+
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenavContainer" >
+  <mat-sidenav #sidenav mode="over" open="False" class="example-sidenav" fixedInViewport="true" fixedTopGap="64">
+    <mat-toolbar color="primary">
+      <button mat-icon-button [routerLink]="['/dashboard']">
+        <mat-icon>group_work</mat-icon>
+        Dashboard
+      </button>
+    </mat-toolbar>
+    <mat-nav-list >
+      <a mat-list-item (tap)="goToService(item.serviceName)" *ngFor="let item of services">
+        <mat-icon>{{item.icon}} </mat-icon>{{item.serviceName}}
+      </a>
+     
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="sidenavContent">
+    <ng-content ></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
